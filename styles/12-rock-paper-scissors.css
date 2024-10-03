@@ -1,43 +1,175 @@
+/* General Styles */
 body {
-  background-color: rgb(25, 25, 25);
   color: white;
   font-family: Arial;
+  background-image: url('../images/RPS-image3.jpeg'); /* Make sure the path is correct */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .title {
-  font-size: 30px;
-  font-weight: bold;
+font-size: 30px;
+font-weight: bold;
+margin-left: 70px;
 }
 
 .move-icon {
-  height: 50px;
+height: 50px;
+}
+
+.down-buttons {
+margin-left: 90px;
+margin-top: 10px;
 }
 
 .move-button {
-  background-color: transparent;
-  border: 3px solid white;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  margin-right: 10px;
-  cursor: pointer;
+background-color: transparent;
+border: 3px solid white;
+width: 120px;
+height: 120px;
+border-radius: 60px;
+margin-right: 10px;
+cursor: pointer;
+text-align: center;
+margin-left: 10px;
 }
 
 .result {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
+font-size: 25px;
+font-weight: bold;
+margin-top: 50px;
 }
 
 .score {
-  margin-top: 60px;
+margin: 60px 5px 0 100px;
 }
 
 .reset-score-button,
 .auto-play-button {
-  background-color: white;
-  border: none;
-  font-size: 15px;
-  padding: 8px 15px;
-  cursor: pointer;
+background-color: white;
+border: none;
+font-size: 15px;
+padding: 8px 15px;
+cursor: pointer;
+margin-bottom: 10px;
+background-color: #f1c40f;
+border-radius: 8px;
+margin-bottom: 8px;
+}
+
+.container {
+width: 40%;
+height: 70%;
+margin: 60px 0 0 350px;
+padding: 40px 0 0 60px;
+border-radius: 30px;
+background-color: #444;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (tablets, 768px and below) */
+@media screen and (max-width: 768px) {
+.container {
+  width: 80%;  /* Adjust container width for smaller screens */
+  margin: 40px auto;  /* Center the container */
+  padding: 20px;  /* Adjust padding */
+}
+
+.title {
+  font-size: 25px;
+  margin-left: 20px; /* Reduce margin */
+}
+
+.down-buttons {
+  margin-left: 20px; /* Adjust button container margin */
+}
+
+.move-button {
+  width: 100px; /* Reduce button size */
+  height: 100px;
+}
+
+.result {
+  font-size: 22px; /* Slightly reduce result font size */
+}
+
+.score {
+  margin: 40px 5px 0 50px; /* Adjust score margins */
+}
+}
+
+/* Extra small devices (phones, 576px and below) */
+@media screen and (max-width: 576px) {
+.container {
+  width: 90%;
+  margin: 20px auto; /* Center container */
+  padding: 10px; /* Reduce padding */
+}
+
+.title {
+  font-size: 22px;
+  margin-left: 10px; /* Reduce margin */
+}
+
+.down-buttons {
+  margin-left: 10px; /* Further adjust margin */
+}
+
+.move-button {
+  width: 80px; /* Reduce button size more */
+  height: 80px;
+}
+
+.result {
+  font-size: 20px;
+}
+
+.score {
+  margin: 20px 5px 0 20px; /* Adjust margins */
+}
+
+.reset-score-button,
+.auto-play-button {
+  padding: 6px 12px; /* Make buttons smaller */
+  font-size: 12px;
+}
+}
+
+/* Ultra small devices (phones, 375px and below) */
+@media screen and (max-width: 375px) {
+.container {
+  width: 100%;
+  margin: 10px auto;
+  padding: 5px; /* Minimal padding */
+}
+
+.title {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.down-buttons {
+  margin-left: 5px;
+}
+
+.move-button {
+  width: 60px; /* Small buttons for tiny screens */
+  height: 60px;
+}
+
+.result {
+  font-size: 18px;
+}
+
+.score {
+  margin: 10px 5px 0 10px;
+}
+
+.reset-score-button,
+.auto-play-button {
+  padding: 5px 10px;
+  font-size: 10px;
+}
 }
